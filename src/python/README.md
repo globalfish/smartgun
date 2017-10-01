@@ -1,1 +1,1 @@
-This is a placeholder for now
+Python code and associated files for the project.
