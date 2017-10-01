@@ -369,7 +369,7 @@ if( len(sys.argv) == 5):
     if( sys.argv[1] == "DLINK2312"):
         vs = VideoCamera(DLINK2312, sys.argv[4], (sys.argv[2], sys.argv[3]))
     elif( sys.argv[1] == "DLINK930"):
-        vs = VideoCamera(DLINK930, sys.argv[4], (sys.argv[2], sys.argv[3]))
+        vs = VideoCamera(DLINK930, sys.argv[4], (sys.argv[2], sys.argv[3])) 
     else:
         print("Usage: ",sys.argv[0], " cameraType [user password ipaddr]")
         print("     cameraType = BUILTIN, PI, DLINK2312, DLINK930")
