@@ -17,9 +17,7 @@ import boto3
 import json
 import gallery
 import threading
-if( platform == PI):
 
-    from espeak import espeak
 import time
 from random import *
 import sys
@@ -258,6 +256,8 @@ class VideoCamera:
 class VoicePrompts:
     def __init__(self, threshold=2):
 
+        if( platform == PI):
+            from espeak import espeak
         timeThreshold = 2 # 2 seconds between prompts
         if( platform == PI):
             espeak.synth("Voice system initialized")
